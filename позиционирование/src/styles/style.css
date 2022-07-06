@@ -1,0 +1,67 @@
+        p,
+        header,
+        main,
+        section,
+        aside,
+        footer {
+            border: 1px solid pink;
+            display: flex;
+        }
+
+        header,
+        footer {
+            flex: 1 1 1; 
+            justify-content: center;
+            height: 5vh;
+            width: 98vw;
+        }
+
+        main { /* основная часть + ещё + aside */
+            display: flex;
+            flex: 0 0 content; 
+            width: 98vw;
+            justify-content: space-between;
+        }
+
+        .content {
+            /* текст "основная часть" + боксы ещё */
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        .section {
+            /* боксы ещё */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 30vw;
+            flex-wrap: wrap;
+        }
+
+        .sectionn { 
+            /* текст внутри боксов ещё */
+            padding: 10px;
+            width: 10vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        .aside {
+            /* боковушка */
+            justify-content: center;
+            align-items: flex-start;
+            width: 20vw;
+        }
+
+        footer {
+            flex-flow: row;
+            justify-content: space-around;
+        }
+
+        .fsection {
+            justify-content: center;
+            height: 5vh;
+            width: 20vw;
+        }
