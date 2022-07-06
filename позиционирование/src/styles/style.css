@@ -12,7 +12,8 @@
         footer {
             flex: 1 1 1; 
             justify-content: center;
-            height: 5vh;
+            align-items: center;
+            height: 10vh;
             width: 98vw;
         }
 
@@ -20,6 +21,7 @@
             display: flex;
             flex: 0 0 content; 
             width: 98vw;
+            height: 20vh;
             justify-content: space-between;
         }
 
@@ -48,11 +50,12 @@
             justify-content: center;
         }
 
+
         .aside {
             /* боковушка */
             justify-content: center;
             align-items: flex-start;
-            width: 20vw;
+            width: 30vw;
         }
 
         footer {
@@ -62,6 +65,7 @@
 
         .fsection {
             justify-content: center;
+            align-items: center;
             height: 5vh;
             width: 20vw;
         }
